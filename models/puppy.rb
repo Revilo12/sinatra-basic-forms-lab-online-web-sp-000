@@ -2,7 +2,7 @@
 class Puppy
   attr_accessor :name, :breed, :age
 
-  def initialize(hash)
+  def new_from_hash(hash)
     hash.each do |key, value|
       send("#{key}=", value)
     end
