@@ -7,6 +7,7 @@ class Puppy
     hash.each do |key, value|
       send("#{key}=", value)
     end
+    puppy
   end
 
   def initialize(name, breed, age)
