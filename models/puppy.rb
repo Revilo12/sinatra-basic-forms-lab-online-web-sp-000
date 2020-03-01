@@ -5,7 +5,7 @@ class Puppy
   def self.new_from_hash(hash)
     puppy = Puppy.new(nil, nil, nil)
     hash.each do |key, value|
-      send("#{key}=", value)
+      puppy.send("#{key}=", value)
     end
     puppy
   end
