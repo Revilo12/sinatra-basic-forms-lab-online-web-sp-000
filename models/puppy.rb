@@ -3,7 +3,7 @@ class Puppy
   attr_accessor :name, :breed, :age
 
   def self.new_from_hash(hash)
-    puppy = Puppy.new
+    puppy = Puppy.new(nil, nil, nil)
     hash.each do |key, value|
       send("#{key}=", value)
     end
