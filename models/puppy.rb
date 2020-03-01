@@ -2,7 +2,8 @@
 class Puppy
   attr_accessor :name, :breed, :age
 
-  def new_from_hash(hash)
+  def self.new_from_hash(hash)
+    puppy = Puppy.new
     hash.each do |key, value|
       send("#{key}=", value)
     end
